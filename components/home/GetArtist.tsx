@@ -23,7 +23,7 @@ const GetArtist: React.FC = () => {
                 artists come from a range of creative disciplines. Each has
                 their own unique style, approach, and voice. From murals to
                 portraits, from living spaces to experiential events, creativity
-                has no limits. Together, let's make more art.
+                has no limits. Together, let&apos;s make more art.
               </p>
               <button
                 type="button"
