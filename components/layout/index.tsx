@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      {children}
+      <div className="bg-gray-100 pb-[5rem]">{children}</div>
       <Footer />
     </>
   );

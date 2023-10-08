@@ -41,7 +41,7 @@ const Jumbotron: React.FC = () => {
 
 const Hero: React.FC = () => {
   return (
-    <section className="mb-40">
+    <section>
       <Jumbotron />
     </section>
   );

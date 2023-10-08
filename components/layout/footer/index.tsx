@@ -179,7 +179,7 @@ const Footer: React.FC<FooterProps> = () => {
         <hr className="w-full my-5" />
         <div className="w-full flex justify-center mt-5 text-sm">
           {"Copyright © "}
-          {new Date().getFullYear()} your website
+          {new Date().getFullYear()} GetArtist
         </div>
       </div>
     </footer>
