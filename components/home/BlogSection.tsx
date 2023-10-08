@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const BlogSection: React.FC = () => {
@@ -33,18 +34,21 @@ const BlogSection: React.FC = () => {
                   </h2>
                   <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
                     Discover how to unlock your inner creativity and unleash
-                    your artistic talents. We'll share tips and techniques to
-                    help you tap into your creative potential and express your
-                    unique artistic vision.
+                    your artistic talents. We&apos;ll share tips and techniques
+                    to help you tap into your creative potential and express
+                    your unique artistic vision.
                   </p>
                 </div>
                 <div className="flex justify-between items-center">
                   <div className="flex items-center space-x-4">
-                    <img
-                      className="w-7 h-7 rounded-full"
-                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                      alt="Jese Leos avatar"
-                    />
+                    <div className="w-7 h-7 rounded-full relative">
+                      <Image
+                        className="w-7 h-7 rounded-full"
+                        src="/user-1.png"
+                        alt="Jese Leos avatar"
+                        fill
+                      />
+                    </div>
                     <span className="font-medium dark:text-white">
                       Jese Leos
                     </span>
@@ -69,11 +73,9 @@ const BlogSection: React.FC = () => {
                   </a>
                 </div>
               </div>
-              <img
-                className="w-1/3 h-[15rem] object-fill"
-                src="/blog-1.jpg"
-                alt=""
-              />
+              <div className="w-1/3 h-[15rem] object-fill relative">
+                <Image src="/blog-1.jpg" alt="" fill />
+              </div>
             </div>
           </article>
           <article className="w-full bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -104,19 +106,22 @@ const BlogSection: React.FC = () => {
                     competitive art industry? Learn valuable insights and
                     strategies for navigating the art world, building your
                     portfolio, and connecting with potential clients and
-                    galleries." Feel free to use these titles and text as a
-                    starting point for your artist hiring website's blog cards.
-                    You can expand upon these topics or tailor them to better
-                    suit your website's audience and goals
+                    galleries.&quot; Feel free to use these titles and text as a
+                    starting point for your artist hiring website&apos;s blog
+                    cards. You can expand upon these topics or tailor them to
+                    better suit your website&apos;s audience and goals
                   </p>
                 </div>
                 <div className="flex justify-between items-center">
                   <div className="flex items-center space-x-4">
-                    <img
-                      className="w-7 h-7 rounded-full"
-                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                      alt="Jese Leos avatar"
-                    />
+                    <div className="w-7 h-7 rounded-full relative">
+                      <Image
+                        className="w-7 h-7 rounded-full"
+                        src="/user-1.png"
+                        alt="Jese Leos avatar"
+                        fill
+                      />
+                    </div>
                     <span className="font-medium dark:text-white">
                       Jese Leos
                     </span>
@@ -141,11 +146,9 @@ const BlogSection: React.FC = () => {
                   </a>
                 </div>
               </div>
-              <img
-                className="w-1/3 h-[15rem] object-fill"
-                src="/blog-2.jpg"
-                alt=""
-              />
+              <div className="w-1/3 h-[15rem] object-fill relative">
+                <Image src="/blog-2.jpg" alt="" fill />
+              </div>
             </div>
           </article>
         </div>
