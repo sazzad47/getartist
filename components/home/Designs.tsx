@@ -46,7 +46,7 @@ export default function MayLike() {
                     alt={`design-${index}`}
                     width={400}
                     height={300}
-                    className="w-full aspect-square"
+                    className="w-full rounded-lg"
                   />
                 </div>
                 <h4 className="p-5 text-start text-[1.8em] font-[700]">{`Art ${index + 1}`} </h4>
