@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { TiTick } from "react-icons/ti";
 import Basics from "./basics";
+import Description from "./Description";
 
 const Stepper = () => {
   const steps = [
     { title: "Basics", component: <Basics /> },
-    { title: "Description", component: <Basics /> },
+    { title: "Description", component: <Description /> },
     { title: "Details", component: <Basics /> },
     { title: "Media", component: <Basics /> },
     { title: "Finish", component: <Basics /> },
@@ -19,12 +20,18 @@ const Stepper = () => {
     } else {
       setCurrentStep((prev) => prev + 1);
     }
+
+     // Scroll to the top of the page
+     window.scrollTo(0, 0);
   };
 
   const handleBackClick = () => {
     if (currentStep > 0) {
       setCurrentStep((prev) => prev - 1);
     }
+
+     // Scroll to the top of the page
+     window.scrollTo(0, 0);
   };
 
   return (
