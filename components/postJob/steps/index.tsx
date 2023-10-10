@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { TiTick } from "react-icons/ti";
 import Basics from "./basics";
 import Description from "./Description";
+import Details from "./details";
 
 const Stepper = () => {
   const steps = [
     { title: "Basics", component: <Basics /> },
     { title: "Description", component: <Description /> },
-    { title: "Details", component: <Basics /> },
+    { title: "Details", component: <Details /> },
     { title: "Media", component: <Basics /> },
     { title: "Finish", component: <Basics /> },
   ];
