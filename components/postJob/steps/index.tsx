@@ -1,23 +1,30 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router"; 
 import { TiTick } from "react-icons/ti";
 import Basics from "./basics";
 import Description from "./Description";
 import Details from "./details";
+import Media from "./media";
+import Finish from "./finish";
 
 const Stepper = () => {
+  const router = useRouter();
+
   const steps = [
     { title: "Basics", component: <Basics /> },
     { title: "Description", component: <Description /> },
     { title: "Details", component: <Details /> },
-    { title: "Media", component: <Basics /> },
-    { title: "Finish", component: <Basics /> },
+    { title: "Media", component: <Media /> },
+    { title: "Finish", component: <Finish /> },
   ];
+  
   const [currentStep, setCurrentStep] = useState(0);
   const [complete, setComplete] = useState(false);
 
   const handleNextClick = () => {
     if (currentStep === steps.length - 1) {
       setComplete(true);
+      router.push("/post-a-job/message");
     } else {
       setCurrentStep((prev) => prev + 1);
     }

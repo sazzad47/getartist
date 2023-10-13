@@ -32,7 +32,7 @@ const Location: React.FC = () => {
         <label className="text-2xl font-bold text-gray-900 mb-3" id="country">
           Where are you located?
         </label>
-        <div className="w-full flex gap-5">
+        <div className="w-full flex gap-5 mt-5">
           {selectedCountry && (
             <div className="text-green-600 w-[25%] rounded-md font-[roboto] text-[1.4em] border border-green-600 flex flex-col justify-center px-3 py-[3rem] gap-3 items-center">
               <AiOutlineFlag className="text-[1.6em]" />

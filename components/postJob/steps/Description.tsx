@@ -6,23 +6,23 @@ const Description = () => {
       <h2 className="text-4xl font-bold text-gray-900 text-center">
         Description
       </h2>
-      <div className="mt-5">
-        <label className="text-2xl font-bold text-gray-900" id="password">
+      <div className="mt-[3rem]">
+        <label className="text-2xl font-bold text-gray-900" id="description">
           Description *
         </label>
         <textarea
-          className="w-full min-h-[15rem] p-3 mt-3 bg-gray-100 border-2 rounded-lg border-gray-400 focus:outline-none focus:border-gray-600 font-medium text-2xl text-gray-900"
-          aria-labelledby="password"
+          className="input min-h-[15rem] mt-5"
+          aria-labelledby="description"
         />
       </div>
       <div className="mt-5">
-        <label className="text-2xl font-bold text-gray-900" id="password">
+        <label className="text-2xl font-bold text-gray-900" id="keywords">
           Keywords *
         </label>
         <input
           type="text"
-          className="w-full p-3 mt-3 bg-gray-100 border-2 rounded-lg border-gray-400 focus:outline-none focus:border-gray-600 font-medium text-2xl text-gray-900"
-          aria-labelledby="password"
+          className="input mt-5"
+          aria-labelledby="keywords"
         />
         <p className="text-gray-600"> Separate each keyword with a comma. </p>
       </div>

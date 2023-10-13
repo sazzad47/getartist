@@ -145,3 +145,31 @@ a {
 .active:not(:first-child):before {
   @apply bg-green-600;
 }
+.input {
+  @apply w-full font-medium rounded-lg text-2xl m-0 block flex-auto border border-solid border-neutral-300 bg-transparent bg-clip-padding p-3 text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-container .tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.tooltip-container:hover .tooltip {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+

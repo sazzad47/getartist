@@ -73,7 +73,7 @@ const Categories: React.FC = () => {
         <label className="text-2xl font-bold text-gray-900 mb-3" id="password">
           Where do you want your ad displayed? *
         </label>
-        <div className="flex gap-5">
+        <div className="flex gap-5 mt-5">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -104,7 +104,7 @@ const Categories: React.FC = () => {
                     <button
                       key={item.id}
                       onClick={() => handleCategoryClick(item.name)}
-                      className={`px-3 py-2 text-xl font-bold border border-gray-400 rounded-full cursor-pointer bg-transparent hover:bg-green-600 text-gray-900 hover:text-white ${
+                      className={`px-3 py-2 text-xl font-bold border border-gray-400 rounded-full cursor-pointer hover:bg-green-600 text-gray-900 hover:text-white ${
                         selectedCategory === item.name
                           ? "bg-green-600 text-white"
                           : ""
