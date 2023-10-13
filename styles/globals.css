@@ -24,29 +24,26 @@ a {
   text-decoration: none;
 }
 
-.btn-primary {
-  color: #ffffff; 
-  border: none;
-  background-color: #1e40af; 
-  padding: 0.625rem 1.25rem; 
-  font-weight: 500; 
-  font-size: 0.875rem; 
-  border-radius: 0.75rem; 
-  outline-width: 4px; 
-  outline-color: #6b82b7; 
-  cursor: pointer;
+/* scrollabr width */
+::-webkit-scrollbar {
+    width: 10px;
 }
-
-.btn-primary:hover {
-  background-color: #1e3a8a; 
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
 }
-
-.btn-primary:focus {
-  outline: none; 
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+    height: 20px !important;
 }
-
-.btn-primary:focus .dark-mode & {
-  outline-color: #2c5282; 
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .footer {
@@ -148,28 +145,7 @@ a {
 .input {
   @apply w-full font-medium rounded-lg text-2xl m-0 block flex-auto border border-solid border-neutral-300 bg-transparent bg-clip-padding p-3 text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none;
 }
-
-.tooltip-container {
-  position: relative;
-}
-
-.tooltip-container .tooltip {
-  position: absolute;
-  background-color: #333;
-  color: #fff;
-  padding: 8px;
-  border-radius: 4px;
-  transform: translateY(-10px);
-  opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  z-index: 1;
-  visibility: hidden;
-}
-
-.tooltip-container:hover .tooltip {
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+.btn-primary {
+  @apply text-[#FFF] transition duration-150 ease-in-out font-[roboto] text-[1.25rem] bg-[#333] hover:bg-[#525050] px-10 py-3;
 }
 

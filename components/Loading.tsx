@@ -30,7 +30,7 @@ const LoadingSpinner: React.FC = () => {
   }, [router.events]);
 
   return (
-    <div id="spinner" style={{ display: 'none', width: "100%", height: "100%", justifyContent: "center", alignItems: "center", position: 'fixed', backgroundColor: "rgba(16, 16, 16, 0.5)" }}>
+    <div id="spinner" style={{ display: 'none', zIndex: "10000", width: "100%", height: "100%", justifyContent: "center", alignItems: "center", position: 'fixed', backgroundColor: "rgba(16, 16, 16, 0.5)" }}>
       <Circles
         height="80"
         width="80"
