@@ -25,11 +25,6 @@ const ArtistCard = () => {
                                 </button>
                             </Link>
                         </div>
-                        <div className="w-full mt-5">
-                            <button role="button" aria-label="message" className="mx-auto text-center w-[15rem] rounded-md block btn-secondary">
-                                View Artist
-                            </button>
-                        </div>
                    </div>
                 </div>
     </div>

@@ -36,7 +36,7 @@ const ArtistCard = () => {
                         </div>
                         <div className="flex justify-center items-center flex-col mt-3">
                             <p className="text-[1.5em] font-medium leading-none text-gray-800">Anita Jane</p>
-                            <p className="text-[1.5em] font-medium leading-none text-gray-600 mt-2">Graphic Designer</p>
+                            <p className="text-[1.2em] font-medium leading-none text-gray-500 mt-2">Sydney, Australia</p>
                             <div className='mt-5'>
                               <Rating/>
                             </div>
@@ -65,9 +65,11 @@ const ArtistCard = () => {
                             </Link>
                         </div>
                         <div className="w-full mt-5">
+                            <Link href="/profile">
                             <button role="button" aria-label="message" className="mx-auto text-center w-[15rem] rounded-md block btn-secondary">
                                 View Artist
                             </button>
+                            </Link>
                         </div>
                    </div>
                 </div>
