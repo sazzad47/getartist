@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 
@@ -57,9 +58,11 @@ const ArtistCard = () => {
                    </div>
                    <div className='w-full'>
                         <div className="w-full">
-                            <button role="button" aria-label="message" className="mx-auto text-center w-[15rem] rounded-md block btn-primary">
-                                Request a Quote
-                            </button>
+                            <Link href="/request-quote/Anita Jan">
+                                <button role="button" aria-label="message" className="mx-auto text-center w-[15rem] rounded-md block btn-primary">
+                                    Request a Quote
+                                </button>
+                            </Link>
                         </div>
                         <div className="w-full mt-5">
                             <button role="button" aria-label="message" className="mx-auto text-center w-[15rem] rounded-md block btn-secondary">
