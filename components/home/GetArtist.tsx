@@ -1,42 +1,65 @@
 import Image from "next/image";
 import React from "react";
 
+const imageUrls = [
+  { id: 1, url: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp' },
+  { id: 2, url: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp' },
+  { id: 3, url: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp' },
+  { id: 4, url: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp' },
+  { id: 5, url: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp' },
+  { id: 6, url: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp' }
+];
+
 const GetArtist: React.FC = () => {
   return (
     <section className="px-[1rem] sm:px-[2rem] md:px-[5rem]">
-      <div className="flex flex-wrap">
-        <div className="mb-12 w-full relative shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
-          <div className="absolute w-full h-full right-[-70px] py-[2rem]">
-          <div className="w-full h-full relative bg-red-500 rounded-lg rounded-r-none shadow-lg dark:shadow-black/20 z-[10]">
-            <Image src="/get-artist.jpg" alt="image" fill />
-          </div>
-          </div>
-        </div>
-        <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
-          <div className="flex h-full items-center rounded-lg rounded-l-none bg-fuchsia-900 p-6 text-center text-white lg:pl-12 lg:text-left">
-            <div className="lg:pl-12">
-              <h2 className="mb-6 text-3xl font-bold">Get An Artist</h2>
-              <p className="mb-6 pb-2 lg:pb-0">
-                We want to make original custom artwork accessible to all. Our
-                platform creates opportunities to commission artwork that speaks
-                to your creative spirit and defines originality. Our independent
-                artists come from a range of creative disciplines. Each has
-                their own unique style, approach, and voice. From murals to
-                portraits, from living spaces to experiential events, creativity
-                has no limits. Together, let&apos;s make more art.
-              </p>
-              <button
-                type="button"
-                className="rounded-full border-2 border-neutral-50 px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
-                data-te-ripple-init
-                data-te-ripple-color="light"
-              >
-                About us
-              </button>
+       <h1 className="text-2xl md:text-4xl font-bold mb-5 text-center px-0 md:px-[10rem]">
+        Browse by categories
+      </h1>
+
+      <div className="flex flex-wrap h-full mt-[3rem]">
+        <div className="flex w-1/2 flex-wrap ">
+            {imageUrls.slice(0, 3).map((image, index)=> {
+                return (
+                    <div key={index} className={`relative group cursor-pointer ${index === 2 ? 'w-full' : 'w-1/2'}`}>
+                        <img
+                            alt={`gallery-${index}`}
+                            className="block h-full w-full object-cover object-center"
+                            src={image.url}/>
+                           
+                           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.2)] opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all duration-500 ease-in z-100 rounded-10">
+                              <div className="p-5 rounded-full text-white text-2xl font-bold group-hover:scale-[1.1] flex items-center justify-center m-10 transform translate-y-20 transition-all duration-500 ease-in cursor-pointer">
+                                Pop Art
+                              </div>
+                            </div>
+                    </div>
+                )
+            })}
+        
             </div>
-          </div>
+
+            <div className="flex w-1/2 flex-wrap">
+                {imageUrls.slice(3, 7).map((image, index)=> {
+                    return (
+                        <div key={index} className={`relative group cursor-pointer ${index === 0 ? 'w-full' : 'w-1/2'}`}>
+                           <img
+                            alt={`gallery-${index}`}
+                            className="block h-full w-full object-cover object-center"
+                            src={image.url}/>
+                           
+                           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.2)] opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all duration-500 ease-in z-100 rounded-10">
+                              <div className="p-5 rounded-full text-white text-2xl font-bold group-hover:scale-[1.1] flex items-center justify-center m-10 transform translate-y-20 transition-all duration-500 ease-in cursor-pointer">
+                                Pop Art
+                              </div>
+                            </div>
+
+
+                        </div>
+                    )
+                })}
+            </div>
         </div>
-      </div>
+            
     </section>
   );
 };

@@ -75,10 +75,10 @@ const ImageSlider = () => {
           }}
         />
       </AnimatePresence>
-      <div className="next" onClick={() => paginate(1)}>
+      <div className="next-arrow" onClick={() => paginate(1)}>
         {"‣"}
       </div>
-      <div className="prev" onClick={() => paginate(-1)}>
+      <div className="prev-arrow" onClick={() => paginate(-1)}>
         {"‣"}
       </div>
     </>

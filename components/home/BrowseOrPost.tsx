@@ -5,7 +5,26 @@ const BrowseOrPost: React.FC = () => {
   return (
     <div className="overflow-y-hidden px-[1rem] sm:px-[2rem] md:px-[5rem]">
         <div className="flex flex-col gap-5">
-          <div className="w-full bg-gradient-to-r from-indigo-500 to-indigo-700 md:py-8 md:px-8 px-5 py-4 xl:px-12 xl:py-16">
+          <div className="w-full background-radial-gradient md:py-8 md:px-8 px-5 py-4 xl:px-12 xl:py-16">
+              <style>
+                {`
+                  .background-radial-gradient {
+                    background-color: hsl(218, 41%, 15%);
+                    background-image: radial-gradient(650px circle at 0% 0%,
+                        hsl(218, 41%, 35%) 15%,
+                        hsl(218, 41%, 30%) 35%,
+                        hsl(218, 41%, 20%) 75%,
+                        hsl(218, 41%, 19%) 80%,
+                        transparent 100%),
+                      radial-gradient(1250px circle at 100% 100%,
+                        hsl(218, 41%, 45%) 15%,
+                        hsl(218, 41%, 30%) 35%,
+                        hsl(218, 41%, 20%) 75%,
+                        hsl(218, 41%, 19%) 80%,
+                        transparent 100%);
+                  }
+                `}
+              </style>
             <div>
               <div className="flex flex-wrap items-center md:flex-row flex-col-reverse justify-between">
                 <div className="md:w-2/3 w-full pb-6 md:pb-0 md:pr-6 flex-col md:block flex items-center justify-center md:pt-0 pt-4">
