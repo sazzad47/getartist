@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const imageUrls = [
@@ -10,7 +11,7 @@ const imageUrls = [
   { id: 6, url: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp' }
 ];
 
-const GetArtist: React.FC = () => {
+const BrowseCategories: React.FC = () => {
   return (
     <section className="px-[1rem] sm:px-[2rem] md:px-[5rem]">
        <h1 className="text-2xl md:text-4xl font-bold mb-5 text-center px-0 md:px-[10rem]">
@@ -21,7 +22,7 @@ const GetArtist: React.FC = () => {
         <div className="flex w-1/2 flex-wrap ">
             {imageUrls.slice(0, 3).map((image, index)=> {
                 return (
-                    <div key={index} className={`relative group cursor-pointer ${index === 2 ? 'w-full' : 'w-1/2'}`}>
+                    <Link href="/discover" key={index} className={`relative group cursor-pointer ${index === 2 ? 'w-full' : 'w-1/2'}`}>
                         <img
                             alt={`gallery-${index}`}
                             className="block h-full w-full object-cover object-center"
@@ -32,7 +33,7 @@ const GetArtist: React.FC = () => {
                                 Pop Art
                               </div>
                             </div>
-                    </div>
+                    </Link>
                 )
             })}
         
@@ -41,7 +42,7 @@ const GetArtist: React.FC = () => {
             <div className="flex w-1/2 flex-wrap">
                 {imageUrls.slice(3, 7).map((image, index)=> {
                     return (
-                        <div key={index} className={`relative group cursor-pointer ${index === 0 ? 'w-full' : 'w-1/2'}`}>
+                      <Link href="/discover" key={index} className={`relative group cursor-pointer ${index === 0 ? 'w-full' : 'w-1/2'}`}>
                            <img
                             alt={`gallery-${index}`}
                             className="block h-full w-full object-cover object-center"
@@ -54,7 +55,7 @@ const GetArtist: React.FC = () => {
                             </div>
 
 
-                        </div>
+                        </Link>
                     )
                 })}
             </div>
@@ -64,4 +65,4 @@ const GetArtist: React.FC = () => {
   );
 };
 
-export default GetArtist;
+export default BrowseCategories;

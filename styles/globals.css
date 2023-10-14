@@ -161,8 +161,8 @@ a {
   align-items: center;
 }
 
-.next,
-.prev {
+.next-arrow,
+.prev-arrow {
   top: calc(50% - 20px);
   position: absolute;
   background: white;

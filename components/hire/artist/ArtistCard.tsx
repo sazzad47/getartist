@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
 
-
 const Rating = ()=> {
     return (
         <div className="flex items-center">

@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import Designs from "./Designs";
 import SubscribeSection from "./SubscribeSection";
-import GetArtist from "./GetArtist";
+import BrowseCategories from "./BrowseCategories";
 import BrowseOrPost from "./BrowseOrPost";
 import WhyArtist from "./WhyArtist";
 import BlogSection from "./BlogSection";
@@ -14,7 +14,7 @@ const Home = () => {
       <Hero />
       <div className="container flex flex-col gap-[5rem]">
         <Designs />
-        <GetArtist />
+        <BrowseCategories />
         <BrowseOrPost />
         <WhyArtist />
         <BlogSection />

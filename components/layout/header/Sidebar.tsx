@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMenuUnfold, AiOutlineClose } from "react-icons/ai";
 import { FaChevronRight } from "react-icons/fa"; 
@@ -33,21 +34,21 @@ const Sidebar: React.FC<SidebarProps> = ({ showSidebar, setShowSidebar }) => {
         </button>
         <ul className="mt-8">
           <li className="mb-4">
-            <a className="text-lg text-white flex items-center" href="#">
-              Book An Artist
-            </a>
+            <Link className="text-2xl text-white flex items-center" href="/hire">
+              Find Artists
+            </Link>
           </li>
           <li className="mb-4">
-            <a className="text-lg text-white flex items-center" href="#">
-              Find Artists
+            <a className="text-2xl text-white flex items-center" href="#">
+              How It Works
             </a>
           </li>
           <li className="mb-4">
             <a
-              className="text-lg text-white flex items-center cursor-pointer"
+              className="text-2xl text-white flex items-center cursor-pointer"
               onClick={toggleSubmenu}
             >
-              How It Works
+               For Artists
               <FaChevronRight
                 className={`ml-2 ${
                   submenuOpen ? "transform rotate-90" : "transform rotate-0"
@@ -55,29 +56,30 @@ const Sidebar: React.FC<SidebarProps> = ({ showSidebar, setShowSidebar }) => {
               />
             </a>
             {submenuOpen && (
-              <ul className="pl-4">
+              <ul className="pl-4 mt-3">
                 <li className="mb-2">
-                  <a className="text-sm text-white" href="#">
-                    Submenu Item 1
+                  <a className="text-xl text-white" href="#">
+                    Reasons to join
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a className="text-sm text-white" href="#">
-                    Submenu Item 2
+                  <a className="text-xl text-white" href="#">
+                    Open jobs
                   </a>
                 </li>
               </ul>
             )}
           </li>
+         
           <li className="mb-4">
-            <a className="text-lg text-white flex items-center" href="#">
-              For Artists
+            <a className="text-2xl text-white flex items-center" href="#">
+              Reviews
             </a>
           </li>
           <li className="mb-4">
-            <a className="text-lg text-white flex items-center" href="#">
-              Reviews
-            </a>
+            <Link className="text-2xl text-white flex items-center" href="/discover">
+              Discover
+            </Link>
           </li>
         </ul>
       </div>
