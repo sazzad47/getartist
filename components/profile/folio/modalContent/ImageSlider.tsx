@@ -56,7 +56,7 @@ const ImageSlider = () => {
           initial="enter"
           animate="center"
           exit="exit"
-          className="absolute h-full"
+          className="absolute h-full w-full"
           transition={{
             x: { type: "spring", stiffness: 300, damping: 30 },
             opacity: { duration: 0.2 }

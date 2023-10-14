@@ -26,9 +26,11 @@ const ArtistCard = () => {
                             </Link>
                         </div>
                         <div className="w-full mt-5">
+                            <Link href="/profile">
                             <button role="button" aria-label="message" className="mx-auto text-center w-[15rem] rounded-md block btn-secondary">
                                 View Artist
                             </button>
+                            </Link>
                         </div>
                    </div>
                 </div>

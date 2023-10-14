@@ -2,7 +2,7 @@ import { AnimatePresence } from 'framer-motion';
 import React, {useState} from 'react';
 import {AiOutlineHeart} from "react-icons/ai";
 import ModalContent from './modalContent';
-import Modal from '../ui/Modal';
+import Modal from '../../ui/Modal';
 
 const imageUrls = [
   { id: 1, url: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp' },

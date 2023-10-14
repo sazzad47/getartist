@@ -1,6 +1,7 @@
 import React from "react";
 import Rating from "../ui/Rating";
-import Folio from "./Folio";
+import Folio from "./folio";
+import Review from "./reviews";
 
 const Profile = () => {
     return (
@@ -53,9 +54,13 @@ const Profile = () => {
                     </div>
                 </div>
                 {/* Card code block end */}
-                    <h3 className="mt-[3rem] mb-[2rem] font-bold text-center text-[2em] text-gray-900"> Portfolio </h3>
-                <div className="w-[80%] bg-white shadow rounded mx-auto mb-[5rem]">
+                <h3 className="mt-[3rem] mb-[2rem] font-bold text-center text-[2em] text-gray-900"> Portfolio </h3>
+                <div className="w-[80%] bg-white shadow rounded mx-auto">
                  <Folio/>
+                </div>
+                <h3 className="mt-[3rem] mb-[2rem] font-bold text-center text-[2em] text-gray-900"> Reviews </h3>
+                <div className="w-[80%] p-[3rem] bg-white shadow rounded mx-auto mb-[5rem]">
+                 <Review/>
                 </div>
             </div>
         </>
