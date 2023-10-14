@@ -69,7 +69,7 @@ const Review: React.FC = () => {
         </p>
       </footer>
       <p className="mb-2 text-gray-500 dark:text-gray-400">
-       Murali's artwork is nothing short of mesmerizing. The vibrant colors and intricate details draw you in, leaving a lasting impression. This masterpiece is a testament to the artist's talent and creativity. It's a must-see for art enthusiasts.
+       Murali&apos;s artwork is nothing short of mesmerizing. The vibrant colors and intricate details draw you in, leaving a lasting impression. This masterpiece is a testament to the artist&apos;s talent and creativity. It&apos;s a must-see for art enthusiasts.
       </p>
       <a href="#" className="block mb-5 text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
         Read more
