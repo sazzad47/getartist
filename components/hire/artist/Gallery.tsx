@@ -12,9 +12,9 @@ const imageUrls = [
 
 const Gallery: React.FC = () => {
   return (
-    <div className="w-[70%] mx-auto px-5 py-2 lg:px-32 lg:pt-24">
-      <div className="-m-1 flex flex-wrap md:-m-2">
-        <div className="flex w-1/2 flex-wrap h-[35rem]">
+    <div className="w-[60%] min-full">
+      <div className="flex flex-wrap h-full">
+        <div className="flex w-1/2 flex-wrap ">
             {imageUrls.slice(0, 3).map((imageUrl, index)=> {
                 return (
                     <div key={index} className={`relative group cursor-pointer ${index === 2 ? 'w-full' : 'w-1/2'}`}>

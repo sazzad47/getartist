@@ -148,4 +148,7 @@ a {
 .btn-primary {
   @apply text-[#FFF] transition duration-150 ease-in-out font-[roboto] text-[1.25rem] bg-[#333] hover:bg-[#525050] px-10 py-3;
 }
+.btn-secondary {
+  @apply text-gray-900 transition duration-150 ease-in-out font-[roboto] text-[1.25rem] bg-gray-50 hover:bg-gray-100 px-10 py-3 border border-gray-200;
+}
 

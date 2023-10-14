@@ -4,7 +4,7 @@ import Gallery from './Gallery'
 
 const ArtistSection = () => {
   return (
-    <div className='mt-5 flex'>
+    <div className='pt-[3rem] w-full flex gap-5 px-[5rem]'>
           <ArtistCard/>
           <Gallery/>
     </div>
