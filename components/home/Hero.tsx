@@ -3,6 +3,25 @@ import React from 'react';
 import {GiCloverSpiked} from "react-icons/gi";
 import {MdLocationPin} from "react-icons/md";
 
+const artTypes = [
+  'Murals & Graffiti',
+  'Installation Art',
+  'Photography',
+  'Plant Styling',
+  'Digital Art',
+  'Signwriters',
+  'Woodwork',
+  'Print Art',
+  'Calligraphy',
+  'Glass Art',
+  'Stained Glass',
+  'Textile Art (Tapestry Art)',
+  'Ceramic Art',
+  'Sculpture',
+  'Pottery',
+  'Workshops',
+];
+
 const Hero: React.FC = () => {
   return (
     <section className="">
@@ -18,17 +37,24 @@ const Hero: React.FC = () => {
 
             <div className="flex w-full justify-between bg-white rounded-full items-center p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
                 <div className="flex w-[40%] gap-2 items-center p-3"> <div className=" rounded-full bg-[#333] p-2"> <GiCloverSpiked className="w-[2rem] h-[2rem] text-white"/> </div> 
-                 Looking for?
+                <select defaultValue="Loaking for" placeholder='Looking for' className='focus:outline-none w-[80%]'>
+                  <option value="" selected disabled> Loaking for </option>
+                  {artTypes.map((artType, index) => (
+                      <option className="py-2 bg-white hover:bg-gray-100 cursor-pointer border-b" key={index}>
+                        {artType}
+                      </option>
+                    ))}
+                </select>
                 </div>
                 <div className="flex w-[35%] gap-2 items-center p-3"> <div className=" rounded-full bg-[#333] p-2"> <MdLocationPin className="w-[2rem] h-[2rem] text-white"/> </div> <input placeholder="Where?" className="border-none outline-none focus:outline-none bg-transparent" />  </div>
                 <Link href="/hire">
-                  <button className="btn-primary rounded-full whitespace-nowrap"> Search Now</button>
+                  <button className="btn-primary rounded-full whitespace-nowrap"> Search</button>
                 </Link>
             </div>
        
             </div>
             <div className="mb-12 lg:mb-0">
-              <img src="https://d33wubrfki0l68.cloudfront.net/dd23708ebc4053551bb33e18b7174e73b6e1710b/dea24/static/images/wallpapers/shared-colors@2x.png"
+              <img src="/hero.avif"
                 className="w-full rounded-lg shadow-lg" alt="" />
             </div>
           </div>

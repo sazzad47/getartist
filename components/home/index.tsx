@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "./Hero";
-import Designs from "./Designs";
+import Featured from "./Featured";
 import SubscribeSection from "./SubscribeSection";
 import BrowseCategories from "./BrowseCategories";
 import BrowseOrPost from "./BrowseOrPost";
@@ -13,12 +13,12 @@ const Home = () => {
     <div className="flex flex-col gap-[5rem]">
       <Hero />
       <div className="container flex flex-col gap-[5rem]">
-        <Designs />
-        <BrowseCategories />
-        <BrowseOrPost />
-        <WhyArtist />
-        <BlogSection />
         <TrustedBy/>
+        <Featured />
+        <BrowseCategories />
+        <WhyArtist />
+        <BrowseOrPost />
+        <BlogSection />
         <SubscribeSection />
       </div>
     </div>

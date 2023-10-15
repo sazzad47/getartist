@@ -70,8 +70,8 @@ export default function MayLike() {
 
   return (
     <div className="h-full flex flex-col justify-between px-[5rem]">
-      <h1 className="text-2xl md:text-4xl font-bold mb-5 text-center px-0 md:px-[10rem]">
-        Discover, hire, and complete original art projects, big or small.
+      <h1 className="text-2xl md:text-4xl font-bold mb-5 text-start">
+        Featured
       </h1>
 
       <div className="text-gray-900 mt-5">

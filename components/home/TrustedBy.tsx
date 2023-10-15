@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 const TrustedBy = () => {
   return (
@@ -7,7 +8,9 @@ const TrustedBy = () => {
         <h2 className="text-center mb-[3rem] text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
           Our marketers are trusted by
         </h2>
+        <Marquee pauseOnHover={true} speed={100} gradient={false}>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+          
           <div className="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
             <svg
               className="h-12 text-gray-500 fill-current dark:text-gray-300"
@@ -87,7 +90,10 @@ const TrustedBy = () => {
               </g>
             </svg>
           </div>
+
+
         </div>
+          </Marquee>
       </div>
     </section>
   );
