@@ -70,7 +70,7 @@ export default function MayLike() {
 
   return (
     <div className="h-full flex flex-col justify-between px-[5rem]">
-      <h1 className="text-2xl md:text-4xl font-bold mb-5 text-start">
+      <h1 className="text-3xl sm:text-5xl font-bold mb-5 text-start">
         Featured
       </h1>
 

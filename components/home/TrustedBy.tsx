@@ -5,7 +5,7 @@ const TrustedBy = () => {
   return (
     <section className="">
       <div className="py-10">
-        <h2 className="text-center mb-[3rem] text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+        <h2 className="text-3xl sm:text-5xl font-bold  text-center mb-[3rem] lg:text-4xl tracking-tightd text-gray-900 dark:text-white">
           Our marketers are trusted by
         </h2>
         <Marquee pauseOnHover={true} speed={100} gradient={false}>
