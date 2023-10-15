@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import {AiOutlineHeart} from "react-icons/ai";
+import Rating from '../ui/Rating';
 
 const ArtistCard = () => {
   return (
@@ -24,7 +25,16 @@ const ArtistCard = () => {
                       My Art practice involves a lot of large scale mural painting, some illustration work and some exhibition work for galleries. It has evolved from doing posters in the street to taking on large
                     </p>
                     <p className='p-4 pb-0 text-xl font-bold text-gray-900 line-clamp-1'> By Anita Jane </p>
-                    <p className='px-4 pb-0 text-lg font-bold text-gray-900 line-clamp-1'> Sydney, Australia </p>
+                    <p className='px-4 pb-0 text-lg font-bold text-gray-600 line-clamp-1'> Sydney, Australia </p>
+                   
+                    <div className='w-full flex justify-between px-4'>
+                      <div className='flex items-center gap-2'>
+
+                        <Rating rating={5} />
+                        (5)
+                      </div>
+                      <div className='rounded-full text-white bg-green-700 px-3 py-2'> Mural & Graffiti Artists </div>
+                    </div>
                     
                    </div>
                    <div className='w-full p-4'>
