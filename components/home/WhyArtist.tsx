@@ -5,7 +5,7 @@ import { VscWorkspaceTrusted } from "react-icons/vsc";
 
 const WhyArtist: React.FC = () => {
   return (
-    <div className="w-full h-auto px-[1rem] sm:px-[2rem] md:px-[5rem] py-10">
+    <div className="w-full h-auto px-[1rem] sm:px-[2rem] md:px-[5rem] pt-10">
       <div className="w-full flex flex-col gap-6">
         <div className="flex justify-between items-center">
           <div className="flex-1">

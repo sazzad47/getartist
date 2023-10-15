@@ -4,6 +4,8 @@ import Featured from "./Featured";
 import BrowseCategories from "./BrowseCategories";
 import WhyArtist from "./WhyArtist";
 import TrustedBy from "./TrustedBy";
+import BrowseArtist from "./browseArtist";
+import BrowseByLocation from "./browseByLocation";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
         <TrustedBy/>
         <Featured />
         <WhyArtist />
+        <BrowseArtist />
+        <BrowseByLocation />
         <BrowseCategories />
       </div>
     </div>

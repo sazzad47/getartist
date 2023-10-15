@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             <div className="flex w-full justify-between bg-white rounded-full items-center p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
                 <div className="flex w-[40%] gap-2 items-center p-3"> <div className=" rounded-full bg-[#333] p-2"> <GiCloverSpiked className="w-[2rem] h-[2rem] text-white"/> </div> 
                 <select defaultValue="Loaking for" placeholder='Looking for' className='focus:outline-none w-[80%]'>
-                  <option value="" selected disabled> Loaking for </option>
+                  <option value="" disabled> Loaking for </option>
                   {artTypes.map((artType, index) => (
                       <option className="py-2 bg-white hover:bg-gray-100 cursor-pointer border-b" key={index}>
                         {artType}
