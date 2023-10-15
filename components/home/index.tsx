@@ -1,11 +1,8 @@
 import React from "react";
 import Hero from "./Hero";
 import Featured from "./Featured";
-import SubscribeSection from "./SubscribeSection";
 import BrowseCategories from "./BrowseCategories";
-import BrowseOrPost from "./BrowseOrPost";
 import WhyArtist from "./WhyArtist";
-import BlogSection from "./BlogSection";
 import TrustedBy from "./TrustedBy";
 
 const Home = () => {
@@ -15,11 +12,8 @@ const Home = () => {
       <div className="container flex flex-col gap-[5rem]">
         <TrustedBy/>
         <Featured />
-        <BrowseCategories />
         <WhyArtist />
-        <BrowseOrPost />
-        <BlogSection />
-        <SubscribeSection />
+        <BrowseCategories />
       </div>
     </div>
   );

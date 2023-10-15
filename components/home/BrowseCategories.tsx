@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -18,18 +17,32 @@ const BrowseCategories: React.FC = () => {
         Search by Art Category
       </h1>
 
-      <div className="flex flex-wrap h-full mt-[3rem]">
-        <div className="flex w-1/2 flex-wrap ">
-            {imageUrls.slice(0, 3).map((image, index)=> {
+      <div className="flex flex-wrap gap-3 h-full mt-[3rem]">
+      <div className="flex flex-1 flex-wrap ">
+      <Link href="/discover" className={`relative group cursor-pointer`}>
+                        <img
+                            alt=""
+                            className="block h-full w-full object-cover object-center"
+                            src="/art-1.jpg"/>
+                           
+                           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.2)] flex items-end justify-start transition-all duration-500 ease-in z-100 rounded-10">
+                              <div className="rounded-full text-white text-2xl font-bold flex items-center justify-center p-5 cursor-pointer">
+                                Pop Art
+                              </div>
+                            </div>
+                    </Link>
+                    </div>
+        <div className="grid grid-cols-2 gap-3 w-1/2">
+            {imageUrls.slice(0, 4).map((image, index)=> {
                 return (
-                    <Link href="/discover" key={index} className={`relative group cursor-pointer ${index === 2 ? 'w-full' : 'w-1/2'}`}>
+                    <Link href="/discover" key={index} className={`relative group cursor-pointer w-full`}>
                         <img
                             alt={`gallery-${index}`}
                             className="block h-full w-full object-cover object-center"
-                            src={image.url}/>
+                            src={`art-${index + 2}.jpg`}/>
                            
-                           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.2)] opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all duration-500 ease-in z-100 rounded-10">
-                              <div className="p-5 rounded-full text-white text-2xl font-bold group-hover:scale-[1.1] flex items-center justify-center m-10 transform translate-y-20 transition-all duration-500 ease-in cursor-pointer">
+                           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.2)] flex items-end justify-start transition-all duration-500 ease-in z-100 rounded-10">
+                              <div className="rounded-full text-white text-2xl font-bold flex items-center justify-center p-5 cursor-pointer">
                                 Pop Art
                               </div>
                             </div>
@@ -39,17 +52,18 @@ const BrowseCategories: React.FC = () => {
         
             </div>
 
-            <div className="flex w-1/2 flex-wrap">
+        </div>
+            <div className="grid grid-cols-3 gap-3 mt-3">
                 {imageUrls.slice(3, 7).map((image, index)=> {
                     return (
-                      <Link href="/discover" key={index} className={`relative group cursor-pointer ${index === 0 ? 'w-full' : 'w-1/2'}`}>
+                      <Link href="/discover" key={index} className={`relative group cursor-pointer w-full`}>
                            <img
                             alt={`gallery-${index}`}
                             className="block h-full w-full object-cover object-center"
-                            src={image.url}/>
+                            src={`art-${index + 6}.jpg`}/>
                            
-                           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.2)] opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all duration-500 ease-in z-100 rounded-10">
-                              <div className="p-5 rounded-full text-white text-2xl font-bold group-hover:scale-[1.1] flex items-center justify-center m-10 transform translate-y-20 transition-all duration-500 ease-in cursor-pointer">
+                           <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.2)] flex items-end justify-start transition-all duration-500 ease-in z-100 rounded-10">
+                              <div className="p-5 rounded-full text-white text-2xl font-bold flex items-center justify-center cursor-pointer">
                                 Pop Art
                               </div>
                             </div>
@@ -59,7 +73,6 @@ const BrowseCategories: React.FC = () => {
                     )
                 })}
             </div>
-        </div>
             
     </section>
   );

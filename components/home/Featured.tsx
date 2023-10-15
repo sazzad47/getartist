@@ -8,7 +8,7 @@ import {AiOutlineSearch, AiOutlineHeart} from "react-icons/ai";
 import Link from "next/link";
 
 export default function MayLike() {
-  const numItems = 10; 
+  const numItems = 4; 
 
   function SampleNextArrow(props: any) {
     const { onClick } = props;
