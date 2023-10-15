@@ -31,7 +31,7 @@ const ArtistCard = () => {
                         <div className="w-full">
                             <Link href="/request-quote/Anita Jan">
                                 <button role="button" aria-label="message" className="mx-auto text-center w-full rounded-md block btn-primary">
-                                    Request a Quote
+                                    Request Quote
                                 </button>
                             </Link>
                         </div>
