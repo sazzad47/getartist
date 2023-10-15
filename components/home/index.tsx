@@ -7,6 +7,7 @@ import TrustedBy from "./TrustedBy";
 import BrowseArtist from "./browseArtist";
 import BrowseByLocation from "./browseByLocation";
 import Guarantees from "./Guarantees";
+import VideoFooter from "./VideoFooter";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <BrowseByLocation />
         <BrowseCategories />
         <Guarantees />
+        <VideoFooter />
       </div>
     </div>
   );
