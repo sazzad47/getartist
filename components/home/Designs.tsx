@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {AiOutlineSearch, AiOutlineHeart} from "react-icons/ai";
+import Link from "next/link";
 
 export default function MayLike() {
   const numItems = 10; 
@@ -86,9 +87,9 @@ export default function MayLike() {
                   />
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.2)] opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all duration-500 ease-in z-100 rounded-10">
-                  <div className="p-5 rounded-full bg-white group-hover:bg-[#e9f5f5] group-hover:scale-[1.1] flex items-center justify-center m-10 transform translate-y-20 transition-all duration-500 ease-in cursor-pointer">
+                  <Link href="/hire" className="p-5 rounded-full bg-white group-hover:bg-[#e9f5f5] group-hover:scale-[1.1] flex items-center justify-center m-10 transform translate-y-20 transition-all duration-500 ease-in cursor-pointer">
                     <AiOutlineSearch className="text-[2em]"/>
-                  </div>
+                  </Link>
                   <div className="p-5 rounded-full bg-white group-hover:bg-[#e9f5f5] group-hover:scale-[1.1] flex items-center justify-center m-10 transform translate-y-20 transition-all duration-500 ease-in cursor-pointer">
                     <AiOutlineHeart className="text-[2em]"/>
                   </div>
