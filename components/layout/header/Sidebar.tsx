@@ -72,9 +72,9 @@ const Sidebar: React.FC<SidebarProps> = ({ showSidebar, setShowSidebar }) => {
           </li>
          
           <li className="mb-4">
-            <a className="text-2xl text-white flex items-center" href="#">
+            <Link className="text-2xl text-white flex items-center" href="/reviews">
               Reviews
-            </a>
+            </Link>
           </li>
           <li className="mb-4">
             <Link className="text-2xl text-white flex items-center" href="/discover">

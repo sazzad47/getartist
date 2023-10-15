@@ -1,17 +1,18 @@
 import React from 'react'
-import JobCard from './JobCard';
+import ReviewCard from './ReviewCard';
+import Hero from './Hero';
 
 const Discover = () => {
   return (
-    <div className='px-[5rem] pt-[4rem]'>
+    <div className=''>
 
-        <div className='text-3xl font-bold text-center'>Open Jobs</div>
+      <Hero/>
         
-            <div className='w-full grid grid-cols-2 gap-5 mt-[3rem]'> 
+            <div className='w-full grid grid-cols-1 gap-5 mt-[3rem] px-[5rem]'> 
                 {Array.from({length: 9}).map((_, index)=> {
                   return (
                     <div key={index}>
-                      <JobCard/>
+                      <ReviewCard/>
                     </div>
                   )
                 })}
